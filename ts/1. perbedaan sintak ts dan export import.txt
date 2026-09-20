@@ -1,0 +1,59 @@
+npm
+↓
+mengelola package / menjalankan script
+
+npx
+↓
+menjalankan executable milik package
+
+tsc = TypeScript Compiler.
+
+tsx memungkinkan kamu menjalankan TypeScript secara langsung, tanpa kamu harus menjalankan tsc terlebih dahulu secara manual.
+
+tsc --watch hanya fokus pada compile.
+
+Sedangkan tsc-watch bisa melakukan sesuatu setelah compile berhasil.(compile TS, hasilkan JS, jalankan JS)
+
+-   → opsi pendek
+--  → opsi panjang
+-D = --save-dev
+
+
+
+### Export & Import
+
+* `export` → membuat variabel, fungsi, atau class dapat digunakan file lain.
+* `import` → menggunakan sesuatu yang sudah di-`export` dari file lain.
+
+### Struktur Folder
+
+Satu `tsconfig.json` hanya memiliki satu `outDir`.
+
+**Direkomendasikan:**
+
+```text
+src/
+├── in/
+│   └── index.ts
+└── class/
+    └── myClass.ts
+
+dist/
+├── in/
+│   └── index.js
+└── class/
+    └── myClass.js
+```
+
+```json
+"rootDir": "./src",
+"outDir": "./dist"
+```
+
+Import antar-folder:
+
+```ts
+import { Sesuatu } from '../class/myClass.js';
+```
+
+Jika ingin output berbeda seperti `in → out` dan `class → classJS`, gunakan **dua `tsconfig`**.
