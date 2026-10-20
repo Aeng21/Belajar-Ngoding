@@ -1,0 +1,19 @@
+#cara pasang ts untuk awalan.
+
+npm init -y
+
+#dipackage ubah menjadi seperti ini
+"type": "module"(supaya bisa import export)
+
+"scripts": {
+  "dev": "tsx watch index.ts"
+},
+
+
+npm install -D typescript tsx
+(tsx biar ts gak perlu dicompile ke js+ auto reload)
+
+#untuk menjalankan file langsung(tidak direkomendasikan karna ribet, mening langsung npm run dev)
+npx tsx watch index.ts
+
+

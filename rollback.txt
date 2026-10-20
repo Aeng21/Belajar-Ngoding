@@ -1,0 +1,8 @@
+#untuk membuat check point rollback
+git commit -am "awalan"
+
+#untuk melihat list check pointnya
+git log --oneline
+
+#untuk mengembalikan kode ke check point yang diinginkan
+git reset --hard 256e664

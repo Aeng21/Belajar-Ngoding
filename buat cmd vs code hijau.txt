@@ -1,0 +1,2 @@
+buka cmd run admin
+reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun /t REG_SZ /d "color 0A" /f

@@ -1,0 +1,7 @@
+# Install dependencies untuk production
+npm install express cors dotenv mysql2
+
+# Install devDependencies
+npm install -D @types/node @types/express @types/cors
+
+#Penjelasan : @types/* adalah deklarasi tipe agar TypeScript memahami fungsi dan tipe data dari library JavaScript yang kita gunakan.

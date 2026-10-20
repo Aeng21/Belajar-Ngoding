@@ -1,0 +1,46 @@
+#alur : File .ts -> Kamu compile manual dengan tsc -> Muncul file fisik .js -> File index.html memanggil file .js tersebut.
+
+#Jalankan perintah berikut untuk membuat "package.json" file konfigurasi npm:
+npm init -y
+npm install -D typescript tsc-watch
+(pakai watch supaya auto reload)
+
+#ubah file package.json :
+"type": "module"
+"scripts": {
+  "dev": "tsc-watch --onSuccess \"node dist/index.js\""
+} (Menjalankan perintah hanya jika kompilasi TypeScript berhasil.)
+
+#Jalankan perintah berikut untuk membuat "tsconfig.json" file konfigurasi typescript:
+npx tsc --init
+
+#hapus komen baris ini di tsconfig.json:
+// "rootDir": "./src",
+// "outDir": "./dist",
+
+#lalu komen baris ini/ false kan supaya hanya .js yang tercompiler :
+"sourceMap": true,
+"declaration": true,
+"declarationMap": true,
+
+#ganti pada tsconfig.json:
+"module": "nodenext",
+menjadi :
+"module": "ESnext",
+
+#buat foler src manual.
+./src
+#lalu buat file index.ts
+./src/index.ts
+#masukan ini sebagai contoh : document.body.innerText= "halo dunia";
+
+#mengcompiler ts ke js.
+npx tsc (untuk mengkonfile semua file ts yang ada)
+npx tsc --ignoreConfig index.ts (untuk confile file tertentu)
+
+
+
+===OPTIONAL===
+#jika ingin memanggil jsnya ke html maka tambahkan script : <script type="module" src="./dist/index.js"></script>
+
+

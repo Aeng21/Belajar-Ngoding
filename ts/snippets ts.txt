@@ -1,3 +1,7 @@
+#Ctrl + Shift + P.
+#Ketik Snippets: Configure Snippets.
+
+
 {
   "doc writeln": {
     "prefix": "doc",

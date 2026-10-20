@@ -1,0 +1,29 @@
+#npm : mengelola package / menjalankan script
+#npx : menjalankan executable milik package
+#tsc : TypeScript Compiler.(compile ts ke js)
+#tsx : memungkinkan kamu menjalankan TypeScript secara langsung, tanpa kamu harus menjalankan tsc terlebih dahulu secara manual.
+(alias menjalankan ts langsung tanpa dicompile ke js)
+
+#tsc --watch hanya fokus pada compile.
+#Sedangkan tsc-watch bisa melakukan sesuatu setelah compile berhasil.(compile TS, hasilkan JS, jalankan JS)
+
+#dependencies :
+Fungsi : Kebutuhan aplikasi saat berjalan
+Contoh : express, mysql2
+instalasi : npm install express
+#devDependencies :
+Fungsi : Kebutuhan selama pengembangan
+Contoh : typescript, tsx, nodemon
+instalasi : npm install -D typescript
+
+#- : opsi pendek
+#-- : opsi panjang
+#-D : --save-dev
+
+#export : membuat variabel, fungsi, atau class dapat digunakan file lain.
+contoh : export const nama = "Amal";
+#import : menggunakan sesuatu yang sudah di-`export` dari file lain.
+contoh : import { nama } from "./user.js";
+
+#Satu `tsconfig.json` hanya memiliki satu `outDir`.
+Jika ingin output berbeda seperti `in → out` dan `class → classJS`, gunakan **dua `tsconfig`**.

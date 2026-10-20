@@ -1,0 +1,5 @@
+#Frontend pakai Vite karena kode frontend dijalankan di browser, sehingga membutuhkan server pengembangan dan fitur auto-update tampilan (HMR). Sementara itu, tsx watch dirancang untuk menjalankan ulang kode TypeScript menggunakan Node.js, bukan memperbarui tampilan browser.
+#HMR (Hot Module Replacement) adalah fitur yang memperbarui bagian kode di browser secara otomatis saat kamu mengubah kode, tanpa harus me-refresh seluruh halaman secara manual.
+
+#alur : File index.html langsung memanggil file .ts -> Server Vite mengubah TS jadi JS di dalam memori (RAM) saat koding.
+npm create vite@latest . -- --template vanilla-ts
