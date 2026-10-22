@@ -1,0 +1,10 @@
+#membuat text dicmd vs code menjadi hijau
+buka cmd run admin
+reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun /t REG_SZ /d "color 0A" /f
+
+#cara menyingkat "npm run dev" menjadi "as" saja misalnya.
+buat as.bat lalu masukan program ini :
+@echo off
+npm run dev
+
+lalu diterminal yang biasanya harus mengetik "npm run dev" menjadi cuku pengetik "as" saja.

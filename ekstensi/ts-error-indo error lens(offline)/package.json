@@ -1,0 +1,11 @@
+{
+  "name": "ts-error-indo",
+  "displayName": "TS Error Bahasa Indonesia",
+  "description": "Menerjemahkan pesan error TypeScript ke Bahasa Indonesia secara offline (kompatibel dengan Error Lens).",
+  "version": "0.0.1",
+  "publisher": "aeng",
+  "engines": { "vscode": "^1.80.0" },
+  "main": "./extension.js",
+  "activationEvents": ["onStartupFinished"],
+  "categories": ["Other"]
+}
