@@ -1,0 +1,9 @@
+Tekan Ctrl + K, lalu Ctrl + S.
+
+ketik acceptSelectedSuggestion
+
+Klik kanan pada binding Tab, pilih Change When Expression, lalu ubah menjadi:
+
+suggestWidgetVisible && textInputFocus
+
+Tekan Enter untuk menyimpan.

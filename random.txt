@@ -7,4 +7,4 @@ buat as.bat lalu masukan program ini :
 @echo off
 npm run dev
 
-lalu diterminal yang biasanya harus mengetik "npm run dev" menjadi cuku pengetik "as" saja.
+lalu diterminal yang biasanya harus mengetik "npm run dev" menjadi cukup mengetik "as" saja.
